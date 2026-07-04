@@ -1,10 +1,12 @@
-# 🏠 מכירת תכולת דירה — Moving Sale Page
+# 🏠 מכירת חיסול ברמת גן — Moving Sale Page
 
 A static, JSON-driven landing page (Hebrew, RTL) for selling household items, deployed on GitHub Pages.
 
+**Live:** https://roussakov.github.io/sales-landing-page/
+
 ## How it works
 
-Everything on the page is driven by **`items.json`**. No build step — edit the JSON, commit, and GitHub Pages updates in ~30 seconds. You can edit it straight from github.com in the browser.
+Everything on the page is driven by **`items.json`**. No build step — edit the JSON, commit, push, and the site updates in ~1 minute. You can edit it straight from github.com in the browser. Nothing is cached (every asset URL is timestamped per page load), so changes appear immediately.
 
 ## Editing `items.json`
 
@@ -14,46 +16,35 @@ Everything on the page is driven by **`items.json`**. No build step — edit the
 |---|---|
 | `whatsapp` | Phone number for all WhatsApp buttons, international format without `+` (e.g. `972542460405`) |
 | `title` / `subtitle` / `heroBadge` | Hero texts at the top of the page |
-| `pickupInfo` | Pickup location/times line |
+| `pickupInfo` | Pickup location/terms line |
+| `freebies` | Optional. If present, shows a highlighted banner above the grid (e.g. free items for buyers). Delete the field to hide |
 | `categoryEmojis` | Emoji shown on category chips and image placeholders |
-
-### Bundles (group deals)
-
-Some items sell better together. Define groups in the top-level `bundles` array:
-
-```json
-{ "id": "living-room", "name": "סט סלון מפנק", "items": [1, 2, 3], "price": 1450 }
-```
-
-- `items` lists the item `id`s in the group, `price` is the price for taking all of them together
-- Every card in the group gets a "🎁 משתלם בסט!" strip naming the other items and the set price; the regular crossed-out total is computed automatically. Clicking the strip opens WhatsApp with a message about the whole set
-- If **any** item in a bundle is sold, the strip disappears from the remaining items automatically
-- An item can belong to one bundle
 
 ### Items
 
-Each item in the `items` array:
-
 ```json
 {
-  "id": 41,
+  "id": 66,
   "name": "שם הפריט",
-  "description": "תיאור קצר עם אופי",
-  "price": 250,
+  "description": "תיאור. דילים וכמויות נכנסים כאן, למשל: המחיר ליחידה — זוג ב־₪350",
+  "price": 200,
   "originalPrice": 800,
-  "category": "סלון",
-  "condition": "כמו חדש",
+  "category": "חדרי שינה",
+  "condition": "מצב מצוין",
   "negotiable": true,
   "sold": false,
-  "images": ["images/sofa-1.jpg", "images/sofa-2.jpg"]
+  "images": ["images/item.jpg"]
 }
 ```
 
-- **Required:** `id`, `name`, `price`, `category`
-- **Optional:** everything else. `originalPrice` shows a crossed-out price, `negotiable` adds a "גמישים במחיר" tag
-- **Categories** and their chips/counts are derived automatically — use any category name you like
-- **Sold an item?** Set `"sold": true` — it grays out, gets a "מצא בית חדש! 🎉" badge, and moves to the bottom
-- **Photos:** drop files into the `images/` folder and list them in `images`. The first one shows on the card (click = full screen). No photo → a friendly emoji placeholder
+- **Required:** `id`, `name`, `price`, `category`. Everything else is optional
+- `originalPrice` shows a crossed-out price anchor; `negotiable` adds a "גמישים במחיר" tag
+- **Categories** and chip counts are derived automatically — use any category name (add an emoji for it in `categoryEmojis`)
+- **Sold an item?** Set `"sold": true` — it grays out, gets a "מצא בית חדש! 🎉" badge, moves to the bottom, and the sold counter appears automatically
+- **Multi-unit items and package deals** (e.g. 2 beds, a 3-scooter lot, a desk+chair+monitor set) are single listings: the card price is the headline price and the per-unit / per-component prices and deals go in the description. One listing per photo
+- **Photos:** optimized JPEGs in `images/` (max 1400px). First image shows on the card, tap for full screen. iPhone HEIC photos must be converted and their EXIF orientation normalized to 1, or they may appear sideways in WhatsApp link previews
+
+There is also an optional `bundles` array (cross-item "buy together" strips); currently unused since package deals are consolidated into single listings.
 
 ## Run locally
 
@@ -62,11 +53,8 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-(Any static server works; opening index.html directly via file:// won't load the JSON.)
-
 ## Deploy
 
-Every push/merge to `main` triggers the GitHub Actions workflow
-(`.github/workflows/deploy.yml`), which validates `items.json` and publishes
-the site to GitHub Pages. Requires Pages source set to **GitHub Actions**
-(repo Settings → Pages → Build and deployment → Source).
+Every push to `main` runs `.github/workflows/deploy.yml`, which **validates items.json** (a JSON typo can never take the site down) and deploys to GitHub Pages.
+
+Requirements: repo public (or GitHub Pro), and **Settings → Pages → Source = GitHub Actions** (with "Deploy from a branch", GitHub's legacy pipeline publishes the site itself and rejects this workflow's deployments with a generic error). The workflow can also be run manually from the Actions tab.
