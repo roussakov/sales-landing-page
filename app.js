@@ -29,6 +29,7 @@ async function init() {
   renderChips();
   renderSoldCounter();
   render();
+  initClarity();
 
   document.getElementById('search').addEventListener('input', e => {
     searchTerm = e.target.value.trim();
@@ -36,6 +37,15 @@ async function init() {
   });
 
   setupLightbox();
+}
+
+function initClarity() {
+  if (!config.clarityId) return;
+  (function (c, l, a, r, i, t, y) {
+    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+    t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+  })(window, document, 'clarity', 'script', config.clarityId);
 }
 
 function waLink(message) {
@@ -66,12 +76,13 @@ function renderHero() {
   const pretty = local.replace(/^(\d{3})(\d{3})(\d{4})$/, '$1-$2-$3');
   const tel = 'tel:+' + config.whatsapp;
   const namePrefix = config.sellerName ? config.sellerName + ' · ' : '';
-  document.getElementById('phone-name').textContent = namePrefix;
-  document.getElementById('phone-number').textContent = pretty;
-  document.getElementById('phone-link').href = tel;
-  document.getElementById('footer-phone-name').textContent = namePrefix;
-  document.getElementById('footer-phone-number').textContent = pretty;
-  document.getElementById('footer-phone-link').href = tel;
+  const set = (id, fn) => { const el = document.getElementById(id); if (el) fn(el); };
+  set('phone-name', el => { el.textContent = namePrefix; });
+  set('phone-number', el => { el.textContent = pretty; });
+  set('phone-link', el => { el.href = tel; });
+  set('footer-phone-name', el => { el.textContent = namePrefix; });
+  set('footer-phone-number', el => { el.textContent = pretty; });
+  set('footer-phone-link', el => { el.href = tel; });
 }
 
 function bundleFor(item) {
