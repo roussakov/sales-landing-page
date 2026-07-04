@@ -65,11 +65,13 @@ function renderHero() {
   const local = '0' + config.whatsapp.replace(/^972/, '');
   const pretty = local.replace(/^(\d{3})(\d{3})(\d{4})$/, '$1-$2-$3');
   const tel = 'tel:+' + config.whatsapp;
+  const namePrefix = config.sellerName ? config.sellerName + ' · ' : '';
+  document.getElementById('phone-name').textContent = namePrefix;
   document.getElementById('phone-number').textContent = pretty;
   document.getElementById('phone-link').href = tel;
-  const footerLink = document.getElementById('footer-phone-link');
-  footerLink.textContent = pretty;
-  footerLink.href = tel;
+  document.getElementById('footer-phone-name').textContent = namePrefix;
+  document.getElementById('footer-phone-number').textContent = pretty;
+  document.getElementById('footer-phone-link').href = tel;
 }
 
 function bundleFor(item) {
