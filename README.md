@@ -66,4 +66,7 @@ python3 -m http.server 8000
 
 ## Deploy
 
-GitHub Pages serves the `main` branch root. Push to `main` → live.
+Every push/merge to `main` triggers the GitHub Actions workflow
+(`.github/workflows/deploy.yml`), which validates `items.json` and publishes
+the site to GitHub Pages. Requires Pages source set to **GitHub Actions**
+(repo Settings → Pages → Build and deployment → Source).
