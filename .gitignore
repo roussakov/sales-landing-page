@@ -1,3 +1,6 @@
 .ssh/
 .claude/
 .DS_Store
+photos-inbox/
+*.heic
+*.HEIC

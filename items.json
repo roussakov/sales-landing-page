@@ -11,56 +11,446 @@
       "חדרי שינה": "🛏️",
       "אלקטרוניקה": "📺",
       "מרפסת וגינה": "🌿",
-      "פינת עבודה": "💼"
+      "פינת עבודה": "💼",
+      "רכב וטיולים": "🚗",
+      "ספורט": "🏋️"
     }
   },
   "bundles": [
-    { "id": "living-room", "name": "סט סלון מפנק", "items": [1, 2, 3], "price": 1450 },
-    { "id": "bedroom", "name": "חדר שינה קומפלט", "items": [19, 20, 21], "price": 2000 },
-    { "id": "home-cinema", "name": "פינת קולנוע ביתית", "items": [27, 29], "price": 1600 },
-    { "id": "balcony-summer", "name": "קיץ במרפסת", "items": [34, 35], "price": 1350 },
-    { "id": "home-office", "name": "פינת עבודה מאובזרת", "items": [38, 39, 40], "price": 700 }
+    {
+      "id": "workstation",
+      "name": "עמדת עבודה מלאה",
+      "items": [
+        38,
+        39,
+        48
+      ],
+      "price": 950
+    },
+    {
+      "id": "laundry",
+      "name": "זוג הכביסה",
+      "items": [
+        49,
+        50
+      ],
+      "price": 1450
+    },
+    {
+      "id": "home-gym",
+      "name": "חדר כושר ביתי",
+      "items": [
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "price": 350
+    },
+    {
+      "id": "desk-set",
+      "name": "עמדת מחשב",
+      "items": [
+        63,
+        57
+      ],
+      "price": 300
+    },
+    {
+      "id": "wheels",
+      "name": "קורקינטים + קסדה",
+      "items": [
+        58,
+        59,
+        60
+      ],
+      "price": 270
+    },
+    {
+      "id": "balcony",
+      "name": "פינת ישיבה למרפסת",
+      "items": [
+        34,
+        61,
+        64
+      ],
+      "price": 800
+    },
+    {
+      "id": "built-in-kitchen",
+      "name": "תנור + כיריים בנויים",
+      "items": [
+        14,
+        62
+      ],
+      "price": 550
+    }
   ],
   "items": [
-    { "id": 1, "name": "ספה תלת־מושבית אפורה", "description": "אלופת הנמנומים של הבית. נוחה ברמות, בלי כתמים ובלי דרמות", "price": 900, "originalPrice": 2800, "category": "סלון", "condition": "מצב טוב", "negotiable": true, "images": [] },
-    { "id": 2, "name": "כורסת טלוויזיה מפנקת", "description": "המקום הכי טוב בבית לראות בו משחק. קשה להיפרד", "price": 350, "category": "סלון", "condition": "מצב טוב", "images": [] },
-    { "id": 3, "name": "שולחן סלון מעץ מלא", "description": "עץ אמיתי, יציב וכבד. מחזיק קפה, רגליים וחלומות", "price": 400, "originalPrice": 1200, "category": "סלון", "condition": "כמו חדש", "images": [] },
-    { "id": 4, "name": "מזנון טלוויזיה לבן", "description": "מלא מקום אחסון, דלתות שנסגרות ברוך. נקי ומטופח", "price": 450, "category": "סלון", "condition": "מצב טוב", "images": [] },
-    { "id": 5, "name": "שטיח סלון 2x3", "description": "רך מתחת לרגליים, עבר ניקוי מקצועי ממש לאחרונה", "price": 250, "category": "סלון", "condition": "מצב טוב", "images": [] },
-    { "id": 6, "name": "ספריית עץ גדולה", "description": "בית ל־300 ספרים ואינסוף חפצי נוי. חזקה ויציבה", "price": 380, "category": "סלון", "condition": "מצב טוב", "images": [] },
-    { "id": 7, "name": "מנורת עמידה מעוצבת", "description": "אור חם ונעים לפינת הקריאה. כולל נורה!", "price": 120, "category": "סלון", "condition": "כמו חדש", "images": [] },
-    { "id": 8, "name": "שולחן צד עגול", "description": "קטן, חמוד ותמיד במקום הנכון. עץ בגוון טבעי", "price": 90, "category": "סלון", "condition": "מצב טוב", "images": [] },
-    { "id": 9, "name": "פוף ישיבה ענק", "description": "הילדים רבו עליו כל יום. עכשיו תורכם", "price": 100, "category": "סלון", "condition": "מצב סביר", "sold": true, "images": [] },
-    { "id": 10, "name": "תמונת קיר גדולה", "description": "נוף מרגיע בכחול־ירוק, מסגרת עץ. משדרגת כל קיר", "price": 150, "category": "סלון", "condition": "כמו חדש", "images": [] },
-    { "id": 11, "name": "מיקרוגל Samsung", "description": "23 ליטר, חימם בכבוד אלפי ארוחות. עובד מצוין", "price": 150, "category": "מטבח", "condition": "מצב טוב", "sold": true, "images": [] },
-    { "id": 12, "name": "שולחן אוכל + 6 כיסאות", "description": "אירח ארוחות שישי בלתי נשכחות. נפתח ל־10 סועדים", "price": 1200, "originalPrice": 3500, "category": "מטבח", "condition": "מצב טוב", "negotiable": true, "images": [] },
-    { "id": 13, "name": "מקרר Haier 500 ליטר", "description": "גדול, שקט וצעיר ברוחו. מקפיא ענק ומגירת ירקות ענקית", "price": 1800, "originalPrice": 4200, "category": "מטבח", "condition": "מצב מצוין", "images": [] },
-    { "id": 14, "name": "תנור אפייה Bosch", "description": "אפה עוגות שזכו למחמאות. טורבו, גריל וכל הטוב", "price": 700, "category": "מטבח", "condition": "מצב טוב", "images": [] },
-    { "id": 15, "name": "קומקום + טוסטר תואמים", "description": "צמד מנצח בשחור מט. הבוקר שלכם ישדרג את עצמו", "price": 80, "category": "מטבח", "condition": "כמו חדש", "images": [] },
-    { "id": 16, "name": "מיקסר KitchenAid", "description": "החלום של כל אופה. אדום יפהפה, כולל שלושה ווים", "price": 900, "originalPrice": 1800, "category": "מטבח", "condition": "כמו חדש", "images": [] },
-    { "id": 17, "name": "סט סירים איכותי", "description": "5 סירים ומחבת, תחתית כבדה. מתאים גם לאינדוקציה", "price": 200, "category": "מטבח", "condition": "מצב טוב", "images": [] },
-    { "id": 18, "name": "מכונת קפה Nespresso", "description": "הכינה בנאמנות שני אספרסו כל בוקר. כולל מקציף חלב", "price": 250, "category": "מטבח", "condition": "מצב מצוין", "sold": true, "images": [] },
-    { "id": 19, "name": "מיטה זוגית + מזרן", "description": "מיטת עץ מלא עם מזרן אורתופדי נוח. שינה טובה מובטחת", "price": 1100, "category": "חדרי שינה", "condition": "מצב טוב", "negotiable": true, "images": [] },
-    { "id": 20, "name": "ארון 4 דלתות", "description": "בולע כמויות של בגדים בלי להתלונן. כולל תא מגירות", "price": 950, "originalPrice": 2600, "category": "חדרי שינה", "condition": "מצב טוב", "images": [] },
-    { "id": 21, "name": "זוג שידות לילה", "description": "תואמות למיטה, עם מגירה שקטה לכל הסודות הקטנים", "price": 220, "category": "חדרי שינה", "condition": "מצב טוב", "images": [] },
-    { "id": 22, "name": "מיטת יחיד + מזרן", "description": "שירתה נאמנה בחדר האורחים. כמעט לא נעשה בה שימוש", "price": 500, "category": "חדרי שינה", "condition": "כמו חדש", "images": [] },
-    { "id": 23, "name": "שידת מגירות רחבה", "description": "6 מגירות עמוקות, גוון עץ בהיר. פותרת כל בלגן", "price": 300, "category": "חדרי שינה", "condition": "מצב טוב", "images": [] },
-    { "id": 24, "name": "מראה עומדת מעוצבת", "description": "מסגרת זהב עדינה. תמיד אמרה לנו שאנחנו יפים", "price": 150, "category": "חדרי שינה", "condition": "כמו חדש", "sold": true, "images": [] },
-    { "id": 25, "name": "כוננית ילדים צבעונית", "description": "עליזה ושמחה, עם תאים בכל הצבעים. גובה בטיחותי", "price": 180, "category": "חדרי שינה", "condition": "מצב טוב", "images": [] },
-    { "id": 26, "name": "מנורת לילה מעוצבת", "description": "אור לילה רך בצורת ענן. הילדים גדלו, הענן נשאר צעיר", "price": 60, "category": "חדרי שינה", "condition": "מצב טוב", "images": [] },
-    { "id": 27, "name": "טלוויזיה LG 55 אינץ'", "description": "4K חדה ומהממת, בת שנתיים בלבד. כולל שלט ומתקן קיר", "price": 1200, "originalPrice": 2400, "category": "אלקטרוניקה", "condition": "כמו חדש", "images": [] },
-    { "id": 28, "name": "טלוויזיה 32 אינץ'", "description": "מושלמת לחדר שינה או למטבח. Smart TV עם כל האפליקציות", "price": 350, "category": "אלקטרוניקה", "condition": "מצב טוב", "images": [] },
-    { "id": 29, "name": "מערכת קולנוע ביתי", "description": "סאונד שממלא את הסלון. סאבוופר + 5 רמקולים", "price": 600, "category": "אלקטרוניקה", "condition": "מצב טוב", "negotiable": true, "images": [] },
-    { "id": 30, "name": "מדפסת HP אלחוטית", "description": "מדפיסה, סורקת ומצלמת. כולל סט דיו כמעט מלא", "price": 150, "category": "אלקטרוניקה", "condition": "מצב טוב", "images": [] },
-    { "id": 31, "name": "מאוורר עמוד שקט", "description": "3 מהירויות, שקט כמו לחישה. הקיץ הבא כבר בדרך", "price": 80, "category": "אלקטרוניקה", "condition": "מצב טוב", "images": [] },
-    { "id": 32, "name": "מזגן נייד", "description": "מציל חיים בקיץ הישראלי. קל להזיז בין חדרים", "price": 700, "originalPrice": 1500, "category": "אלקטרוניקה", "condition": "מצב מצוין", "images": [] },
-    { "id": 33, "name": "שואב אבק Dyson", "description": "אלחוטי, חזק, גורם לניקיון להרגיש כמו משחק", "price": 800, "originalPrice": 1900, "category": "אלקטרוניקה", "condition": "מצב מצוין", "sold": true, "images": [] },
-    { "id": 34, "name": "סט ישיבה למרפסת", "description": "שולחן + 4 כיסאות ראטן. ערבי קיץ מושלמים כלולים במחיר", "price": 650, "category": "מרפסת וגינה", "condition": "מצב טוב", "negotiable": true, "images": [] },
-    { "id": 35, "name": "מנגל גז Weber", "description": "3 להבות, גריל אמיתי לרציניים. על האש הכי טובה בשכונה", "price": 900, "originalPrice": 2200, "category": "מרפסת וגינה", "condition": "מצב מצוין", "images": [] },
-    { "id": 36, "name": "סט 5 עציצים גדולים", "description": "קרמיקה יפהפייה בגווני טרקוטה. הצמחים לא כלולים 🌱", "price": 200, "category": "מרפסת וגינה", "condition": "מצב טוב", "images": [] },
-    { "id": 37, "name": "ערסל + מעמד", "description": "מקום רשמי לבהייה בשמיים. נוח בטירוף", "price": 120, "category": "מרפסת וגינה", "condition": "מצב טוב", "images": [] },
-    { "id": 38, "name": "שולחן כתיבה מרווח", "description": "נשא על גבו אינסוף שעות עבודה מהבית. כולל מעבר כבלים", "price": 350, "category": "פינת עבודה", "condition": "מצב טוב", "images": [] },
-    { "id": 39, "name": "כיסא משרדי ארגונומי", "description": "הגב שלכם יגיד תודה. תמיכה לומברית וכל הכיוונונים", "price": 400, "originalPrice": 1100, "category": "פינת עבודה", "condition": "מצב מצוין", "images": [] },
-    { "id": 40, "name": "מנורת שולחן", "description": "אור מדויק לעבודה או לקריאה. זרוע גמישה", "price": 50, "category": "פינת עבודה", "condition": "מצב טוב", "images": [] }
+    {
+      "id": 14,
+      "name": "תנור אפייה בנוי Lenco",
+      "description": "תנור בנוי לבן של Lenco. פינוי בתיאום, לקראת השיפוץ",
+      "price": 350,
+      "category": "מטבח",
+      "condition": "מצב טוב",
+      "images": [
+        "images/hob-oven.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "מיטה זוגית + מזרן Aeroflex",
+      "description": "מיטה זוגית לבנה עם ראש מיטה מעץ, כולל מזרן Aeroflex דגם Molly Visco Air",
+      "price": 1300,
+      "category": "חדרי שינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/bed-mattress.jpg"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "מיטת יחיד + מזרן",
+      "description": "מיטת יחיד לבנה עם מגירות אחסון בתחתית, כולל מזרן",
+      "price": 550,
+      "category": "חדרי שינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/single-bed-storage.jpg"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "שידת מגירות לבנה",
+      "description": "שידה לבנה עם 5 מגירות מרווחות",
+      "price": 300,
+      "category": "חדרי שינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/drawer-chest-white.jpg"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "מראה עומדת",
+      "description": "מראה גובה מלא עם מסגרת לבנה",
+      "price": 120,
+      "category": "חדרי שינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/floor-mirror.jpg"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "טלוויזיה חכמה LG",
+      "description": "טלוויזיה חכמה של LG (webOS), נקנתה לפני שנתיים ב־₪8,000. מותקנת כיום על הקיר, כולל שלט",
+      "price": 3200,
+      "originalPrice": 8000,
+      "category": "אלקטרוניקה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/tv-lg.jpg"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "ספת ראטן למרפסת",
+      "description": "ספת ראטן עם כריות ישיבה וגב בצבע אפור",
+      "price": 500,
+      "category": "מרפסת וגינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/balcony-set.jpg"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "שולחן עבודה לבן",
+      "description": "שולחן עבודה לבן עם רגלי מתכת",
+      "price": 500,
+      "category": "פינת עבודה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/workstation.jpg"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "כיסא משרדי ארגונומי",
+      "description": "כיסא משרדי שחור עם גב רשת, ידיות וכיוונון גובה",
+      "price": 350,
+      "category": "פינת עבודה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/workstation.jpg"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "גריל Ninja + טיגון באוויר",
+      "description": "גריל חשמלי של Ninja עם מצבי גריל, צלייה, טיגון באוויר ואפייה (ממשק בעברית)",
+      "price": 600,
+      "category": "מטבח",
+      "condition": "מצב טוב",
+      "images": [
+        "images/ninja-grill.jpg"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "בר מים tami4",
+      "description": "בר מים tami4 בצבע שחור",
+      "price": 800,
+      "category": "מטבח",
+      "condition": "מצב טוב",
+      "images": [
+        "images/tami4.jpg"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "שואב רובוטי Dreame + תחנת ריקון",
+      "description": "שואב אבק רובוטי של Dreame עם תחנת ריקון אוטומטית",
+      "price": 900,
+      "category": "אלקטרוניקה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/robot-vacuum-dreame.jpg"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "תיק גג לרכב צ'ימיגג 650 ליטר",
+      "description": "תיק גג צ'ימיגג 650 Premium (140×95×50 ס\"מ, בד שחור), באריזה",
+      "price": 350,
+      "category": "רכב וטיולים",
+      "condition": "מצב מצוין",
+      "images": [
+        "images/car-roof-bag.jpg"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "מיקרוגל Midea",
+      "description": "מיקרוגל שחור קומפקטי של Midea",
+      "price": 150,
+      "category": "מטבח",
+      "condition": "מצב טוב",
+      "images": [
+        "images/microwave-midea.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "ארון בגדים לחדר ילדים",
+      "description": "ארון אפור בהיר עם שתי דלתות, חלונות מראה ומגירה תחתונה",
+      "price": 350,
+      "category": "חדרי שינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/kids-wardrobe-gray.jpg"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "מיטת ילדים משולבת עם שולחן כתיבה",
+      "description": "יחידה משולבת בלבן: מיטה מוגבהת עם מעקות, כוננית מדפים, מדרגות ושולחן כתיבה מחובר",
+      "price": 700,
+      "category": "חדרי שינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/kids-bed-desk.jpg"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "מסך מחשב Lenovo ThinkVision",
+      "description": "מסך מחשב של Lenovo מסדרת ThinkVision, כולל כבלים",
+      "price": 250,
+      "category": "פינת עבודה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/workstation.jpg"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "מכונת כביסה Bosch 7 ק\"ג",
+      "description": "Bosch Serie 4 VarioPerfect, 7 ק\"ג, 1000 סל\"ד, מנוע EcoSilence Drive",
+      "price": 900,
+      "category": "אלקטרוניקה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/washer-dryer.jpg"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "מייבש כביסה Constructa",
+      "description": "מייבש כביסה של Constructa (קבוצת Bosch)",
+      "price": 700,
+      "category": "אלקטרוניקה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/washer-dryer.jpg"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "כרית ענק לישיבה",
+      "description": "כריות רצפה ענקיות ונעימות. יש 4 בצבעים: בז', ורוד, מנטה ושמנת — המחיר ליחידה, כל הארבע ב־₪250",
+      "price": 70,
+      "category": "סלון",
+      "condition": "מצב טוב",
+      "images": [
+        "images/lounge-cushions.jpg"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "סטפר Domyos עם רצועות",
+      "description": "מיני־סטפר של Domyos (דקתלון) עם רצועות התנגדות וצג",
+      "price": 150,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/gym-set.jpg"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "זוג משקולות 7.5 ק\"ג",
+      "description": "זוג משקולות משושות, 7.5 ק\"ג כל אחת",
+      "price": 120,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/gym-set.jpg"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "זוג גלילי עיסוי",
+      "description": "פואם רולר כתום מחורץ + גליל שחור",
+      "price": 60,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/gym-set.jpg"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "משקולות קטנות",
+      "description": "זוג משקולות 1 ק\"ג + זוג York בני 3 ק\"ג",
+      "price": 50,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/gym-set.jpg"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "מזרן אימון",
+      "description": "מזרן אימון אפור עבה של דקתלון",
+      "price": 40,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/gym-set.jpg"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "מסך מחשב Acer",
+      "description": "מסך מחשב של Acer, כולל כבלים",
+      "price": 150,
+      "category": "פינת עבודה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/desk-oak.jpg"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "קורקינט לבן",
+      "description": "קורקינט עירוני לבן עם בלם יד",
+      "price": 150,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/scooters.jpg"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "קורקינט סגול",
+      "description": "קורקינט עם משטח סגול מאויר",
+      "price": 120,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/scooters.jpg"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "קסדת רכיבה",
+      "description": "קסדה שחורה",
+      "price": 40,
+      "category": "ספורט",
+      "condition": "מצב טוב",
+      "images": [
+        "images/scooters.jpg"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "שולחן צד ראטן",
+      "description": "שולחן צד עגול מראטן עם פלטת זכוכית",
+      "price": 150,
+      "category": "מרפסת וגינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/balcony-set.jpg"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "כיריים גז בנויות",
+      "description": "כיריים גז 4 להבות על משטח זכוכית לבן. פינוי בתיאום, לקראת השיפוץ",
+      "price": 300,
+      "category": "מטבח",
+      "condition": "מצב טוב",
+      "images": [
+        "images/hob-oven.jpg"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "שולחן כתיבה בגוון עץ",
+      "description": "שולחן כתיבה בגוון עץ בהיר עם שלוש מגירות לבנות",
+      "price": 200,
+      "category": "פינת עבודה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/desk-oak.jpg"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "הדום ראטן למרפסת",
+      "description": "הדום/ספסל ראטן תואם לספה, עם כרית אפורה",
+      "price": 250,
+      "category": "מרפסת וגינה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/balcony-set.jpg"
+      ]
+    }
   ]
 }
