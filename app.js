@@ -54,6 +54,11 @@ function renderHero() {
   document.getElementById('page-subtitle').textContent = config.subtitle;
   document.getElementById('pickup-info').textContent = config.pickupInfo;
   document.title = config.title;
+  if (config.freebies) {
+    const el = document.getElementById('freebies');
+    el.textContent = config.freebies;
+    el.hidden = false;
+  }
 }
 
 function bundleFor(item) {
