@@ -1,3 +1,5 @@
+const BUST = window.BUST || Date.now();
+
 let config = {};
 let items = [];
 let bundles = [];
@@ -118,7 +120,7 @@ function buildCard(item) {
 
   if (item.images && item.images.length > 0) {
     const img = document.createElement('img');
-    img.src = item.images[0];
+    img.src = item.images[0] + '?t=' + BUST;
     img.alt = item.name;
     img.loading = 'lazy';
     img.addEventListener('error', () => {
@@ -200,7 +202,7 @@ function setupLightbox() {
 function openLightbox(item) {
   const lightbox = document.getElementById('lightbox');
   const img = document.getElementById('lightbox-img');
-  img.src = item.images[0];
+  img.src = item.images[0] + '?t=' + BUST;
   img.alt = item.name;
   lightbox.hidden = false;
 }
