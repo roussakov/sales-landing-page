@@ -61,6 +61,15 @@ function renderHero() {
     el.textContent = config.freebies;
     el.hidden = false;
   }
+
+  const local = '0' + config.whatsapp.replace(/^972/, '');
+  const pretty = local.replace(/^(\d{3})(\d{3})(\d{4})$/, '$1-$2-$3');
+  const tel = 'tel:+' + config.whatsapp;
+  document.getElementById('phone-number').textContent = pretty;
+  document.getElementById('phone-link').href = tel;
+  const footerLink = document.getElementById('footer-phone-link');
+  footerLink.textContent = pretty;
+  footerLink.href = tel;
 }
 
 function bundleFor(item) {

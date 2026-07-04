@@ -69,6 +69,35 @@ body {
   font-size: 0.9rem;
 }
 
+.phone-line {
+  margin: 14px 0 0;
+}
+
+.phone-line a {
+  display: inline-block;
+  background: var(--card);
+  border: 2px solid var(--accent);
+  color: var(--accent-deep);
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.phone-line a:hover {
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.footer-phone a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
 /* ---------- whatsapp buttons ---------- */
 .wa-button {
   display: inline-flex;
