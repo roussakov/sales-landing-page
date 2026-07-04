@@ -55,7 +55,7 @@
         63,
         57
       ],
-      "price": 300
+      "price": 220
     },
     {
       "id": "wheels",
@@ -418,9 +418,9 @@
       "id": 63,
       "name": "שולחן כתיבה בגוון עץ",
       "description": "שולחן כתיבה בגוון עץ בהיר עם שלוש מגירות לבנות",
-      "price": 200,
+      "price": 100,
       "category": "פינת עבודה",
-      "condition": "מצב טוב",
+      "condition": "מצב שמיש",
       "images": [
         "images/desk-oak.jpg"
       ]
