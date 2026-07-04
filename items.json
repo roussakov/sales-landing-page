@@ -373,7 +373,7 @@
       "id": 58,
       "name": "קורקינט לבן",
       "description": "קורקינט עירוני לבן עם בלם יד",
-      "price": 150,
+      "price": 250,
       "category": "ספורט",
       "condition": "מצב טוב",
       "images": [
@@ -384,7 +384,7 @@
       "id": 59,
       "name": "קורקינט סגול",
       "description": "קורקינט עם משטח סגול מאויר",
-      "price": 120,
+      "price": 220,
       "category": "ספורט",
       "condition": "מצב טוב",
       "images": [
@@ -395,7 +395,7 @@
       "id": 60,
       "name": "קסדת רכיבה",
       "description": "קסדה שחורה",
-      "price": 40,
+      "price": 60,
       "category": "ספורט",
       "condition": "מצב טוב",
       "images": [
