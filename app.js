@@ -19,7 +19,7 @@ init().catch(err => {
 });
 
 async function init() {
-  const res = await fetch('items.json', { cache: 'no-store' });
+  const res = await fetch('items.json?t=' + BUST, { cache: 'no-store' });
   const data = await res.json();
   config = data.config;
   items = data.items;
