@@ -92,8 +92,9 @@
     {
       "id": 19,
       "name": "מיטה זוגית + מזרן Aeroflex",
-      "description": "מיטה זוגית לבנה עם ראש מיטה מעץ, כולל מזרן Aeroflex דגם Molly Visco Air",
-      "price": 1300,
+      "description": "מיטה זוגית לבנה עם ראש מיטה מעץ, כולל מזרן Aeroflex דגם Molly Visco Air. אפשר לקנות גם בנפרד — צרו קשר ונתאם מחיר",
+      "price": 1500,
+      "negotiable": true,
       "category": "חדרי שינה",
       "condition": "מצב טוב",
       "images": [
