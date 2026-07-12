@@ -33,9 +33,9 @@
     },
     {
       "id": 19,
-      "name": "מיטה זוגית + מזרן Aeroflex (סט)",
-      "description": "מזרן פרימיום של Aeroflex דגם Molly Visco Air, שמור ונקי לחלוטין, כולל מגן מזרן תואם לגודלו + מסגרת מיטה זוגית בעיצוב עץ לבן קלאסי עם גב תואם. אפשר גם בנפרד: מזרן ₪800 / מיטה ₪500",
-      "price": 1200,
+      "name": "מזרן זוגי Aeroflex פרימיום",
+      "description": "מזרן פרימיום של Aeroflex דגם Molly Visco Air, שמור ונקי לחלוטין, כולל מגן מזרן תואם לגודלו. (מסגרת המיטה נמכרה — נשאר המזרן בלבד)",
+      "price": 800,
       "category": "חדרי שינה",
       "condition": "מצב טוב",
       "images": [
@@ -51,7 +51,8 @@
       "condition": "מצב מצוין",
       "images": [
         "images/single-bed-storage.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 23,
@@ -85,7 +86,8 @@
       "condition": "כמו חדשה",
       "images": [
         "images/tv-lg.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 34,
@@ -119,7 +121,8 @@
       "condition": "מצב טוב",
       "images": [
         "images/ninja-grill.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 42,
@@ -130,7 +133,8 @@
       "condition": "מצב מצוין",
       "images": [
         "images/tami4.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 43,
@@ -141,7 +145,8 @@
       "condition": "מצב מצוין",
       "images": [
         "images/robot-vacuum-dreame.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 44,
@@ -152,7 +157,8 @@
       "condition": "כמו חדש",
       "images": [
         "images/car-roof-bag.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 45,
@@ -185,7 +191,8 @@
       "condition": "מצב טוב",
       "images": [
         "images/kids-bed-desk.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 49,
@@ -196,7 +203,8 @@
       "condition": "מצב טוב",
       "images": [
         "images/washer-dryer.jpg"
-      ]
+      ],
+      "sold": true
     },
     {
       "id": 51,
@@ -234,15 +242,26 @@
     },
     {
       "id": 63,
-      "name": "זוג שולחנות כתיבה לתלמיד + מסך מחשב (סט)",
-      "description": "שני שולחנות עם משטח עבודה רחב ושידת 3 מגירות מובנית — אחד בגוון אלון סונומה עם מגירות לבנות ואחד לבן מלא + מסך מחשב Acer כולל כבלים. המחיר לכל הסט! אפשר גם בנפרד: שולחן ₪150 / מסך ₪100",
-      "price": 350,
+      "name": "זוג שולחנות כתיבה לתלמיד (3 מגירות)",
+      "description": "שני שולחנות עם משטח עבודה רחב ושידת 3 מגירות מובנית",
+      "price": 300,
       "category": "פינת עבודה",
       "condition": "מצב טוב",
       "images": [
         "images/desk-oak.jpg"
       ],
-      "originalPrice": 400
+      "sold": true
+    },
+    {
+      "id": 66,
+      "name": "מסך מחשב Acer",
+      "description": "מסך מחשב של Acer, כולל כבלים",
+      "price": 100,
+      "category": "פינת עבודה",
+      "condition": "מצב טוב",
+      "images": [
+        "images/desk-oak.jpg"
+      ]
     }
   ]
 }
